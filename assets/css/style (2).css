@@ -1,10 +1,12 @@
 body {
-	background-image: url("../img/PicOfHassan.jpg");
+	padding: 200px;
+	background-image: url("/assets/img/PicOfHassan.jpg");
+	
 }
 
 
 .message {
 	text-align: center;
-	color: aqua;
+	color: green;
 }
 
