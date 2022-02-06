@@ -6,37 +6,67 @@
     <title>This is my homepage</title>  
 
     <style>
+            html, body {
+            margin: 0px;
+            height: 110%;
+            
+        }
             .image {
-                padding: 400px;
-                background-image: url(http://www.liaquathassanjaved.com/assets/img/PicOfHassan2.jpg);
-                background-size: cover;
+                
+                background-image: url(/assets/img/PicOfHassan2.jpg) /*width="1180" height="663" */;
+                background-size: cover; 
                 background-repeat: no-repeat;
                 background-position: center;
-                font-family: cursive;
-                font-weight:600;
+                margin: 0px;
+                height: 100%;
+                
             }
 
             
             .message {
                 position: absolute;
-                left: 700px;
-                top: 400px;
+                right: 565px;
+                top: 640px;
                 color: white;
                 font-size: 50px;
-                
+                font-family: cursive;
+                font-weight: 600px;
+            
+            } 
+
+            #introTxt {
+                overflow: hidden;
+                border-right: .15em solid orange;
+                font-size: 1.6rem;
+                white-space: nowrap;
+                margin: 0 auto;
+                letter-spacing: 0.03em;
+                animation: 
+                    typing 3.5s steps(40, end) forwards,
+                    blink-caret .75s step-end infinite;
+
             }
 
+            @keyframes typing {
+                from {width: 0;}
+                to {width: 100%;}
+            }
+
+            @keyframes blink-caret {
+                from, to {border-color: transparent }
+                50%  {border-color: orange;} 
+            }
     </style>
 </head>
 
 <body>
     <div class = "image">
         <div class = "message">
-            <p>I'm hungry</p>
-            <p>Time to go home</p>
+            <p id = "introTxt">Welcome! My name is Hassan. </p>
+            
+            
         </div>
-        
-    </div>
+     </div>   
 </body>
 
 </html>
