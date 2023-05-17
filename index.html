@@ -3,37 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is my homepage</title>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <title>Just a test</title>  
 
     <style>
-            html, body {
-            margin: 0px;
-            height: 110%;
+
                 
-            background-image: linear-gradient(to top, 
-            rgba(112,125,144,0) 85%, rgba(82,131,183,1) 95%), 
-            url(assets/img/PicOfHassan2.jpg);
-            background-size: cover; 
-            background-repeat: no-repeat;
-            background-position: center;
-            
-        }
-            
+            * {
+                box-sizing: border-box;
+                
+            }
 
-             
-            .message {
+             html, body {
+             margin: 0px;
+             height: 110%;
+             }
 
+             .firstImg {
+                background-image: linear-gradient(to top, 
+                rgba(112,125,144,0) 85%, rgba(82,131,183,1) 95%), 
+                url(assets/img/PicOfHassan2.jpg);
+                background-size: cover; 
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                margin: 0px;
+                height: 110%;
+                
+
+             }
+             .message {
                 position: absolute;
-                right: 500px;
-                top: 650px;
-                color: white;
+                right: 300px;                       
+                top: 550px;                             
+                color: white;                   
                 font-size: 50px;
                 font-family: monospace;
                 font-weight: 600px;
             
-            } 
-            
-         @media only screen and (max-width: 1280px){ 
+            }  
+
+
+            @media only screen and (max-width: 1280px){ 
 
                 .message {
                     right: 318px;
@@ -50,7 +63,7 @@
                 
             }
 
-            #introTxt {
+            #introTxt {   
                 overflow: hidden;
                 border-right: .10em solid orange;
                 font-size: 1.6rem;
@@ -78,13 +91,15 @@
                 width: 100%;
                 height: 50px; 
                 line-height: 50px;
+                position: fixed;
+                overflow: hidden;
             }
 
             nav ul {
                 float: left;
                 font-weight: 300px;
                 margin: 0px;
-                padding-block-start: 0px;
+                padding-inline-start: 0px;
             }
 
             nav ul li{
@@ -95,44 +110,82 @@
 
             nav ul li a{
                 text-decoration: none;
-                font-size: 35px;  
                 font-size: 35px;
                 color: #f0f0f0;
                 margin: 100px;
             }
-            
+
             .hoverTing ul li a:hover {
                 filter: brightness(150%);
             }
-            
 
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }   
+            .item1 {
+                background-image: url(assets/img/RepeatingBeach2.jpg);
+                background-size: contain;
+                background-repeat: repeat;
+                width: 800px;
+                height: 900px;
+                filter: blur(11px);
+                flex: 1.51;
+
+            }
+            .text {
+                color: black;
+                font-weight: bold;
+                position: absolute;
+                top: 190%; 
+                left: 30%; 
+                transform: translate(-50%, -50%);
+                text-align: center;   
+                z-index: 2;
+                font-size: 30px;  
+                font-family: 'Courgette', cursive;
+            }  
+            /* dont touch this */
+            .item2 {  
+                background-image: url(assets/img/RepeatingBeach.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 800px;
+                height: 900px;
+                flex: 1;
+                padding-right: 0;
+                margin-right: 0px;
+
+            } 
     </style>
 </head>
-
 <body>
+        <div class="firstImg">
 
-        <div class = "message">
-            <p id = "introTxt">Welcome! My name is Hassan.</p>
-        </div>
-
+                <div class = "message">
+                    <p id = "introTxt">Welcome! My name is Hassan.</p>
+                </div>
 
                 <nav class="hoverTing">
 
                     <ul>
-                        <li><a href="https://github.com/hassannnny" target="_blank">I</a></li>
-                        <li><a href="assets/img/Javed_Resume.pdf" target="_blank">Am</a></li>    
-                        <li><a href="https://www.linkedin.com/in/hassan-javed-52797a23b/" target="_blank">Inevitable</a></li>
+                        <li><a href="https://github.com/hassannnny" target="_blank">Just</a></li>
+                        <li><a href="assets/img/Javed_Resume.pdf" target="_blank">A</a></li>    
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Test</a></li>
                     </ul>
-   
+
                 </nav>
-
-            
-        
+        </div>   
+        <div class="container">
+            <div class="item1"></div>
+            <div class="text">
+                <p>Up and coming Software Engineer</p>
+                <p>Eager as ever to develop the future </p>
+                
+            </div>
+            <div class="item2"></div>
         </div>
-     </div>   
 
-        <script>
-        </script>
-</body>
+</body> 
 
 </html>
