@@ -6,185 +6,115 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <title>Just a test</title>  
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script type="text/javascript" src="assets/js/myScript.js"></script>
+    <title>Hi, Name's Hassan</title>  
 
-    <style>
-
-                
-            * {
-                box-sizing: border-box;
-                
-            }
-
-             html, body {
-             margin: 0px;
-             height: 110%;
-             }
-
-             .firstImg {
-                background-image: linear-gradient(to top, 
-                rgba(112,125,144,0) 85%, rgba(82,131,183,1) 95%), 
-                url(assets/img/PicOfHassan2.jpg);
-                background-size: cover; 
-                background-repeat: no-repeat;
-                background-position: center;
-                background-attachment: fixed;
-                margin: 0px;
-                height: 110%;
-                
-
-             }
-             .message {
-                position: absolute;
-                right: 300px;                       
-                top: 550px;                             
-                color: white;                   
-                font-size: 50px;
-                font-family: monospace;
-                font-weight: 600px;
-            
-            }  
-
-
-            @media only screen and (max-width: 1280px){ 
-
-                .message {
-                    right: 318px;
-                    top: 593px; 
-                }
-            }
-
-            @media only screen and (max-height: 750px) {
-
-                .message {
-                    right: 318px;
-                    top: 593px;
-                }
-                
-            }
-
-            #introTxt {   
-                overflow: hidden;
-                border-right: .10em solid orange;
-                font-size: 1.6rem;
-                white-space: nowrap;
-                margin: 0 auto;
-                letter-spacing: 0.03em;
-                animation: 
-                    typing 3.5s steps(40, end) forwards,
-                    blink-caret .75s step-end infinite;
-
-            }
-
-            @keyframes typing {
-                from {width: 0;}
-                to {width: 100%;}
-            }
-
-            @keyframes blink-caret {
-                from, to {border-color: transparent }
-                50%  {border-color: orange;} 
-            } 
-
-
-            nav {
-                width: 100%;
-                height: 50px; 
-                line-height: 50px;
-                position: fixed;
-                overflow: hidden;
-            }
-
-            nav ul {
-                float: left;
-                font-weight: 300px;
-                margin: 0px;
-                padding-inline-start: 0px;
-            }
-
-            nav ul li{
-                list-style-type: none;
-                display: inline-block;
-                font-weight: 900px;
-            }
-
-            nav ul li a{
-                text-decoration: none;
-                font-size: 35px;
-                color: #f0f0f0;
-                margin: 100px;
-            }
-
-            .hoverTing ul li a:hover {
-                filter: brightness(150%);
-            }
-
-            .container {
-                display: flex;
-                flex-wrap: wrap;
-            }   
-            .item1 {
-                background-image: url(assets/img/RepeatingBeach2.jpg);
-                background-size: contain;
-                background-repeat: repeat;
-                width: 800px;
-                height: 900px;
-                filter: blur(11px);
-                flex: 1.51;
-
-            }
-            .text {
-                color: black;
-                font-weight: bold;
-                position: absolute;
-                top: 190%; 
-                left: 30%; 
-                transform: translate(-50%, -50%);
-                text-align: center;   
-                z-index: 2;
-                font-size: 30px;  
-                font-family: 'Courgette', cursive;
-            }  
-            /* dont touch this */
-            .item2 {  
-                background-image: url(assets/img/RepeatingBeach.jpg);
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 800px;
-                height: 900px;
-                flex: 1;
-                padding-right: 0;
-                margin-right: 0px;
-
-            } 
-    </style>
 </head>
 <body>
+
+        
         <div class="firstImg">
 
                 <div class = "message">
-                    <p id = "introTxt">Welcome! My name is Hassan.</p>
+                    <p id = "introTxt">Welcome!</p>
                 </div>
 
                 <nav class="hoverTing">
 
                     <ul>
-                        <li><a href="https://github.com/hassannnny" target="_blank">Just</a></li>
-                        <li><a href="assets/img/Javed_Resume.pdf" target="_blank">A</a></li>    
-                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Test</a></li>
+                        <li id = "first"><a href="https://github.com/hassannnny" target="_blank">Hi,</a></li>
+                        <li id = "second"><a href="assets/img/Javed_Resume.pdf" target="_blank">Name's</a></li>    
+                        <li id = "third"><a href="https://www.linkedin.com/in/liaquathassanjaved/" target="_blank">Hassan</a></li>
                     </ul>
-
-                </nav>
-        </div>   
+        
+                </nav>   
+        </div>  
+        
+        
         <div class="container">
             <div class="item1"></div>
-            <div class="text">
-                <p>Up and coming Software Engineer</p>
-                <p>Eager as ever to develop the future </p>
-                
+            <div id ="text">
+                <p>Up and coming Software Engineer
+                    <br><br>
+                    Eager as ever to develop the future
+                </p>   
             </div>
+            
+            <div id = "customID" class="cta hide">
+
+                <nav class="hoverTing2">
+
+                    <ul>
+                        <li>
+                            <a href="https://github.com/hassannnny" target="_blank">
+                                <img src="assets/img/gitLogo2.png" width="50" height="50"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/img/Javed_Resume.pdf" target="_blank">
+                                <img src="assets/img/resume-icon-png-15.png" width="50" height="50"/>
+                            </a>
+                        </li>    
+                        <li>
+                            <a href="https://www.linkedin.com/in/liaquathassanjaved/" target="_blank">
+                                <img src="assets/img/lincoln.png" width="50" height="50"/>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>   
+
+                
+
+            </div>
+
             <div class="item2"></div>
+
         </div>
+
+
+        <script type="text/javascript">
+
+            myID = document.getElementById("customID"); 
+
+            var myScrollFunc = function() {
+                var x = window.scrollY;
+                
+                if (x >= 1100) {
+                    myID.className = "cta show" 
+
+
+                let myTimeout = setTimeout(
+
+                    function profBio() {
+
+                        const letsSee = document.getElementById("text").innerHTML = 
+
+                            "About me" + "<br><br>" +
+                            "<p class = 'text2'>" + 
+                            "Hassan is an enthusiastic full stack software engineer." + "<br>" + 
+                            "Predominantly a practitioner of Java, Hassan is proficient in plenty of " + "<br>" + 
+                            "languages such as HTML&CSS, Javascript, Python, and even cloud computing in AWS." + "<br>" + 
+                            "In 2022, Hassan worked for Genspark serving as a Java Full Stack Software Engineer where he" + "<br>" +
+                            "built several individual projects and back end applications." + "<br>" + 
+                            "Outside of work, you can find Hassan strength training at a gym or at a park playing basketball" + "<br>" + 
+                            "with friends or at a beach reading and writing poetry." + "<br>" +
+                            "Hassan earned a B.S in Computer Science with a concentration in Information Technology from" + "<br>" +
+                            "Northeastern Illinois University in 2021." +
+                            "</p>";
+
+                    }, 2000);
+
+                }
+                else {
+                    myID.className = "cta hide"
+                }
+            };
+
+            window.addEventListener("scroll", myScrollFunc);
+
+        </script>
 
 </body> 
 
