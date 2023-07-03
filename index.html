@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script type="text/javascript" src="assets/js/myScript.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/myScript.js"></script> -->
     <title>Hi, Name's Hassan</title>  
 
 </head>
@@ -89,20 +89,49 @@
 
                     function profBio() {
 
+
+                        let arr = ["Hassan is an enthusiastic full stack software engineer.", 
+                        "Predominantly a practitioner of Java, Hassan is proficient in plenty of languages such as", 
+                        "HTML & CSS, Javascript, Python, and even cloud computing in AWS.", 
+                        "In 2022, Hassan worked for Genspark serving as a Java Full Stack Software Engineer where he",
+                        "built several individual projects and back end applications", 
+                        "Outside of work, you can find Hassan strength training at a gym or at a park playing basketball", 
+                        "with friends or at a beach reading and writing poetry.", 
+                        "Hassan earned a B.S in Computer Science with a concentration in Information Technology from", 
+                        "Northeastern Illinois University in 2021."]; 
+
+
                         const letsSee = document.getElementById("text").innerHTML = 
 
-                            "About me" + "<br><br>" +
-                            "<p class = 'text2'>" + 
-                            "Hassan is an enthusiastic full stack software engineer." + "<br>" + 
-                            "Predominantly a practitioner of Java, Hassan is proficient in plenty of " + "<br>" + 
-                            "languages such as HTML&CSS, Javascript, Python, and even cloud computing in AWS." + "<br>" + 
-                            "In 2022, Hassan worked for Genspark serving as a Java Full Stack Software Engineer where he" + "<br>" +
-                            "built several individual projects and back end applications." + "<br>" + 
-                            "Outside of work, you can find Hassan strength training at a gym or at a park playing basketball" + "<br>" + 
-                            "with friends or at a beach reading and writing poetry." + "<br>" +
-                            "Hassan earned a B.S in Computer Science with a concentration in Information Technology from" + "<br>" +
-                            "Northeastern Illinois University in 2021." +
-                            "</p>";
+                            "<p class = 'text3'>" + "About me" + "</p>" + "<br><br>"
+        
+                                for (let i = 0; i < arr.length; i++) {
+                                    for (let j = 0; j < arr[i].length; j++) {
+
+                                        document.getElementById("text").innerHTML += "<span class = 'text2'>" + arr[i][j] + "</span>";
+
+                                    } 
+                                    document.getElementById("text").innerHTML += "<br>";
+                                };  
+
+                            let char = 0; 
+                            let timer = setInterval(onTick); 
+
+                            function onTick() {
+
+                                const span = document.getElementById("text").querySelectorAll('span')[char];
+                                span.classList.add('fade');
+                                char++;
+                                if (char === 640) {
+                                    complete();
+                                    return;
+                                }
+                            }
+
+                            function complete() {
+                                clearInterval(timer);
+                                timer = null;
+                            }
 
                     }, 4000);
 
@@ -114,8 +143,11 @@
 
             window.addEventListener("scroll", myScrollFunc);
 
+            
         </script>
 
 </body> 
 
 </html>
+
+
