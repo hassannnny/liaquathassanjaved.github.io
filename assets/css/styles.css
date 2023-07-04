@@ -89,15 +89,9 @@ nav ul li a{
 }
 
 
-/* .hoverTing ul li a:hover {
+.hoverTing ul li a:hover {
     filter: brightness(150%);
-} */
-
-/* nav.hoverTing {
-    position: -webkit-sticky;
-    position:sticky;
-    top:0;
-} */
+}
 
 .container {
     display: flex;
@@ -122,14 +116,14 @@ nav ul li a{
     top: 195%; 
     left: 30%; 
     transform: translate(-50%, -50%);
-    text-align: center;   
+    text-align: left;   
     z-index: 2;
     font-size: 30px;  
     font-family: 'Courgette', cursive;
 
 }
 .item2 {  
-    background-image: url(../img/RepeatingBeach.jpg);
+    background-image: url(../img/RepeatingBeachColored.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 800px;
@@ -167,5 +161,33 @@ nav ul li a{
     color: black;
     text-align: left;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    line-height: 1.3;
+    line-height: 0.7;
+    
 }
+
+.text3 {
+
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 0%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;   
+    z-index: 2;
+    font-size: 30px;  
+    font-family: 'Courgette', cursive;
+}
+
+span {
+    opacity: 0; 
+    transition: all 1s ease;
+    transform: translateY(0px);
+    display: inline block;
+    text-align: left;
+}
+
+span.fade {
+    opacity: 1;
+}
+
