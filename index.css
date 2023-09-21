@@ -1,0 +1,32 @@
+:root {
+
+    --colors: linear-gradient(45deg,red, orange, yellow, green, blue, indigo, violet);
+  }
+  
+  @keyframes someAnimation {
+    
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
+
+#app {
+  background-image: var(--colors);
+  background-size: 400%;
+  height: 100vh;
+  animation: someAnimation 35s infinite alternate;
+}
+
+@media all and (max-width: 768px) {
+  #app {
+    background-image: var(--colors);
+    height: auto;
+  }
+}
+
+.card {
+    border-radius: 25px;
+}
