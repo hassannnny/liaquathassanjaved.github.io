@@ -1,153 +1,230 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+
+    
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+    
+    
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+
+      
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <!-- <script type="text/javascript" src="assets/js/myScript.js"></script> -->
-    <title>Hi, Name's Hassan</title>  
 
-</head>
-<body>
+    
+    
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
 
+
+    <link rel="stylesheet" href="index.css">
+
+    
+  </head>
+  <body>
+    <!-- Start your project here-->
+
+    <div class="bg-image" id="home" style="background-image: url('./img/PicOfHassan2.jpg'); height: 100vh;">
+
+      <nav class="navbar-expand-lg fixed-top py-3">
         
-        <div class="firstImg">
+        <div class="container-fluid" >
+           
+          
+            <ul class="navbar-nav" style="color: white;">
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#aboutMe">About Me</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
 
-                <div class = "message">
-                    <p id = "introTxt">Welcome!</p>
-                </div>
+      <div class="text-center" style="color: white; 
+                                            margin-top: 540px; 
+                                            font-family: monospace; 
+                                            font-size: 25px; 
+                                            margin-left: 50vw;">Welcome!</div>
+    
+    </div>
 
-                <nav class="hoverTing">
+    <div class="container-fluid mx-0 px-0" id="aboutMe">
+      <div class="row gx-0">
+        <div class="col-lg-8 col-md-12 col-sm-12">   
+          
+          <div class="demoB" style="position: relative; min-height: 100vh;">
 
-                    <ul>
-                        <li id = "first"><a href="https://github.com/hassannnny" target="_blank">Hi,</a></li>
-                        <li id = "second"><a href="assets/img/Javed_Resume.pdf" target="_blank">Name's</a></li>    
-                        <li id = "third"><a href="https://www.linkedin.com/in/liaquathassanjaved/" target="_blank">Hassan</a></li>
-                    </ul>
-        
-                </nav>   
-        </div>  
-        
-        
-        <div class="container">
-            <div class="item1"></div>
-            <div id ="text">
-                <p>Up and coming Software Engineer
-                    <br><br>
-                    Eager as ever to develop the future
-                </p>   
+            <div class="bg-image" style="background-image: url('./img/RepeatingBeach4.jpg'); 
+                                      height: 100vh; background-size: contain;
+                                      background-repeat: repeat;
+                                      position: absolute; 
+                                      width: 100%; 
+                                      z-index: 1;
+                                      filter: blur(11px);">
             </div>
+
+            <!--so like immmmmmma get rid of top and left and write my own dimensions-->
+
+            <h1 class="bg-text" style="color: black; 
+                                      position: absolute;
+                                      top: 0; 
+                                      margin-top: 200px;
+                                      text-align: center; 
+                                      width: 100%; 
+                                      z-index: 2;
+                                      font-family: 'Courgette', cursive;">
+                                      
+
+                  About Me
+
+
+            </h1>
+
             
-            <div id = "customID" class="cta hide">
+            <p class="bg-text" style="position: absolute;
+                                    top: 0; 
+                                    margin-top: 300px;
+                                    text-align:center; 
+                                    width: 100%; 
+                                    /* height: 100%; */
+                                    z-index: 2;
+                                    ;">
+                                    
 
-                <nav class="hoverTing2">
+                      Predominantly a practitioner of Java, Hassan is proficient in plenty of languages such as<br>
+                      HTML & CSS, Javascript, Python, and even cloud computing in AWS.<br>
+                      In 2022, Hassan worked for GenSpark serving as a Java Full Stack Software Engineer where he<br>
+                      built several individual projects and back end applications.<br>
+                      Outside of work, you can find Hassan strength training at a gym or at a park playing basketball<br>
+                      with friends or at a beach reading and writing poetry.<br>
+                      Hassan earned a B.S in Computer Science with a concentration in Information Technology from<br>
+                      Northeastern Illinois University in 2021.
+                                  
+                  
+                  
+            </p>
 
-                    <ul>
-                        <li>
-                            <a href="https://github.com/hassannnny" target="_blank">
-                                <img src="assets/img/gitLogo2.png" width="50" height="50"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="assets/img/Javed_Resume.pdf" target="_blank">
-                                <img src="assets/img/resume-icon-png-15.png" width="50" height="50"/>
-                            </a>
-                        </li>    
-                        <li>
-                            <a href="https://www.linkedin.com/in/liaquathassanjaved/" target="_blank">
-                                <img src="assets/img/lincoln.png" width="50" height="50"/>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>   
 
-                
-
-            </div>
-
-            <div class="item2"></div>
+          </div>
 
         </div>
+        <div class="col-lg-4">
+          <div class="bg-image" style="background-image: url('./img/RepeatingBeachColored.jpg'); height: 100vh; background-size: cover;"></div>
+        </div>
+      </div>
+    </div>
 
 
-        <script type="text/javascript">
-
-            myID = document.getElementById("customID"); 
-
-            var myScrollFunc = function() {
-                var x = window.scrollY;
-                
-                if (x >= 1100) {
-                    myID.className = "cta show" 
 
 
-                let myTimeout = setTimeout(
 
-                    function profBio() {
+    <div id="projects">
+
+      <div id="app">
+
+        <h1 style="text-align: center; padding: 10vh; color: white;">Personal Projects</h1>
+      
+        <div class="container">
+          <div class="row p-3">
+            <div class="col-md-4 col-sm-12 mb-3">
+              <div class="card">
+                  <img src="./img/7z2bzl.gif" height="350" style="border-radius: 15px 15px 0px 0px;"/>
+                  <div class="card-body">
+                    <h5>La La La La</h5>
+                    <p>It's Elmo's World</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-3">
+              <div class="card">
+                <img src="./img/7z2bzl.gif" height="350" style="border-radius: 15px 15px 0px 0px;"/>
+              <div class="card-body">
+                <h5>La La La La</h5>
+                <p>It's Elmo's world</p>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+              <div class="card">
+                <img src="./img/7z2bzl.gif" height="350" style="border-radius: 15px 15px 0px 0px;"/>
+                 <div class="card-body">
+                  <h5>La La La La</h5>
+                  <p>It's Elmo's world</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
 
 
-                        let arr = ["Hassan is an enthusiastic full stack software engineer.", 
-                        "Predominantly a practitioner of Java, Hassan is proficient in plenty of languages such as", 
-                        "HTML & CSS, Javascript, Python, and even cloud computing in AWS.", 
-                        "In 2022, Hassan worked for Genspark serving as a Java Full Stack Software Engineer where he",
-                        "built several individual projects and back end applications", 
-                        "Outside of work, you can find Hassan strength training at a gym or at a park playing basketball", 
-                        "with friends or at a beach reading and writing poetry.", 
-                        "Hassan earned a B.S in Computer Science with a concentration in Information Technology from", 
-                        "Northeastern Illinois University in 2021."]; 
+    </div>
 
 
-                        const letsSee = document.getElementById("text").innerHTML = 
+    <!-- End your project here-->
 
-                            "<p class = 'text3'>" + "About me" + "</p>" + "<br><br>"
-        
-                                for (let i = 0; i < arr.length; i++) {
-                                    for (let j = 0; j < arr[i].length; j++) {
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
 
-                                        document.getElementById("text").innerHTML += "<span class = 'text2'>" + arr[i][j] + "</span>";
+    <!-- <script type="text/babel">
 
-                                    } 
-                                    document.getElementById("text").innerHTML += "<br>";
-                                };  
 
-                            let char = 0; 
-                            let timer = setInterval(onTick); 
+      class nothaTest extends React.Component {
 
-                            function onTick() {
 
-                                const span = document.getElementById("text").querySelectorAll('span')[char];
-                                span.classList.add('fade');
-                                char++;
-                                if (char === 640) {
-                                    complete();
-                                    return;
-                                }
-                            }
-
-                            function complete() {
-                                clearInterval(timer);
-                                timer = null;
-                            }
-
-                    }, 4000);
-
-                }
-                else {
-                    myID.className = "cta hide"
-                }
-            };
-
-            window.addEventListener("scroll", myScrollFunc);
+          render() { 
+            
+            return (
 
             
-        </script>
 
-</body> 
+              
+            );
+          }
+      }
 
+      const domContainer = document.querySelector('#ReactApp');
+      ReactDOM.render(React.createElement(nothaTest), domContainer);
+
+    </script> -->
+
+
+
+
+  </body>
 </html>
 
 
+
+<!-- <div class="col-12">
+  <div class="bg-image" style="background-image: url('./img/Colorado.jpg'); height: 100vh; background-size: cover; -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);"></div>
+</div> -->
