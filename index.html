@@ -41,14 +41,14 @@
 
     
   </head>
-  <body>
+  <body style="margin: 0;">
     <!-- Start your project here-->
 
     <div class="bg-image" id="home" style="background-image: url('./img/PicOfHassan2.jpg'); height: 100vh;">
 
       <nav class="navbar-expand-lg fixed-top py-3">
         
-        <div class="container-fluid" >
+        <div class="container-fluid" id="nav" >
            
           
             <ul class="navbar-nav" style="color: white;">
@@ -149,46 +149,80 @@
 
         <h1 style="text-align: center; padding: 10vh; color: white;">Personal Projects</h1>
       
-        <div class="container">
-          <div class="row p-3">
-            <div class="col-md-4 col-sm-12 mb-3">
+        <div class="container-fluid">
+          <div class="row " style="justify-content: center;">
+            <div class="col-md-3 col-sm-12 mb-3" id="col">
               <div class="card">
-                  <img src="./img/7z2bzl.gif" height="350" style="border-radius: 15px 15px 0px 0px;"/>
+                  <img src="./img/Screenshot flashcardsreact.jpg" style="border-radius: 15px 15px 0px 0px;"/>
                   <div class="card-body">
-                    <h5>La La La La</h5>
-                    <p>It's Elmo's World</p>
+                    <h5 class="card-title" style="text-align: center;">Flashcards</h5>
+                    <p class="card-text">
+                      <ul class="flascards">
+                        <li>Built front-end with React.js implementing Fetch API</li>
+                        <li>Based back-end with Spring Boot MVC and Maven</li>
+                        <li>Hooked MySQL server using Hibernate for user data storage</li>
+                      </ul>
+                    </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-12 mb-3">
-              <div class="card">
-                <img src="./img/7z2bzl.gif" height="350" style="border-radius: 15px 15px 0px 0px;"/>
-              <div class="card-body">
-                <h5>La La La La</h5>
-                <p>It's Elmo's world</p>
-              </div>
+            <div class="col-md-3 col-sm-12 mb-3" id="col">
+              <div class="card " >
+                <img src="./img/demoapp_latest.jpg"  style="border-radius: 15px 15px 0px 0px;"/>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Expenses Tracker</h5>
+                  <p class="card-text">
+                    <ul>
+                      <li>Provided user the service of logging and conceptualizing their expenses</li>
+                      <li>Implemented intuitive CRUD operations</li>
+                    </ul>
+                  </p> 
+                </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-12 mb-4">
-              <div class="card">
-                <img src="./img/7z2bzl.gif" height="350" style="border-radius: 15px 15px 0px 0px;"/>
+            <div class="col-md-3 col-sm-12 mb-4" id="col">
+              <div class="card" >
+                <img src="./img/etGif.gif" style="border-radius: 15px 15px 0px 0px;"/>
                  <div class="card-body">
-                  <h5>La La La La</h5>
-                  <p>It's Elmo's world</p>
+                  <h5 class="card-title" style="text-align: center;">Tester for Expenses Tracker App </h5>
+                  <p>
+                    <ul>
+                      <li>Used Selenium Framework to build a catalyst for entering and processing 
+                        data for the Expenses Tracker App during development</li>
+                      <li>Serves as a reusable appliance for testing functions for future projects</li>
+                    </ul>
+                  </p>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       
       </div>
-
-
     </div>
 
 
-    <!-- End your project here-->
 
+
+<!-- 
+    <div class="container-fluid" style="background-image: var(--colors);
+                          background-size: 400%;
+                          height: 100vh;
+                          animation: someAnimation 35s infinite alternate;">
+    
+
+    <div class="row" style="padding-top: 100px; justify-content: center;">
+      <img src="img/etGif.gif" style="height: 32vh; width: 32vw;"/>
+      <img src="img/etGif.gif" style="height: 32vh; width: 32vw;"/>
+      <img src="img/etGif.gif" style="height: 32vh; width: 32vw;"/>
+    </div>
+
+    </div> -->
+
+
+    <!-- End your project here-->
+ 
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->

@@ -1,3 +1,9 @@
+#nav ul :hover {
+  text-decoration: underline;
+}
+
+
+
 :root {
 
     --colors: linear-gradient(45deg,red, orange, yellow, green, blue, indigo, violet);
@@ -30,3 +36,11 @@
 .card {
     border-radius: 25px;
 }
+
+#col {
+
+  height: 500px;
+  width: 545px;
+
+}
+
