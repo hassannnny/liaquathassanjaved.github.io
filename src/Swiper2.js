@@ -85,6 +85,7 @@ export default function Swiper2() {
     var hour = new Date().toLocaleTimeString().split(":")[0];
 
     console.log("speaking from widget method the swiperNoSwiping class")
+    console.log("more talk")
 
     if (amOrPm == "AM" && hour >= 6 ) {
       return (
