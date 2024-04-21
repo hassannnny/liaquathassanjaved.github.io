@@ -84,6 +84,8 @@ export default function Swiper2() {
     var amOrPm = new Date().toLocaleTimeString().split(" ")[1];
     var hour = new Date().toLocaleTimeString().split(":")[0];
 
+    console.log("speaking from widget method the swiperNoSwiping class")
+
     if (amOrPm == "AM" && hour >= 6 ) {
       return (
         <div className='container mt-5 d-flex justify-content-left' style={{height: '60vh', width: '40vw'}}>
