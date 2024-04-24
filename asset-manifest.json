@@ -1,28 +1,16 @@
 {
   "files": {
-    "main.css": "/liaquathassanjaved.github.io/static/css/main.a209d655.css",
-    "main.js": "/liaquathassanjaved.github.io/static/js/main.8ea5c1a2.js",
-    "static/js/787.b80100c1.chunk.js": "/liaquathassanjaved.github.io/static/js/787.b80100c1.chunk.js",
-    "static/media/sunriseSkyline.jpg": "/liaquathassanjaved.github.io/static/media/sunriseSkyline.aa5d38328690f0154b6d.jpg",
-    "static/media/Screenshot Demo App.jpg": "/liaquathassanjaved.github.io/static/media/Screenshot Demo App.fa49febb7e452ff56228.jpg",
-    "static/media/chicagoNight.jpg": "/liaquathassanjaved.github.io/static/media/chicagoNight.2711e981e090e6287789.jpg",
-    "static/media/Colorado.jpg": "/liaquathassanjaved.github.io/static/media/Colorado.e4a089f2cc0a43386409.jpg",
-    "static/media/chicagoEvening.jpg": "/liaquathassanjaved.github.io/static/media/chicagoEvening.dc8cd0d3e0bbc2a68865.jpg",
-    "static/media/flashcardsSS.jpg": "/liaquathassanjaved.github.io/static/media/flashcardsSS.6a19d37f05e736c35da2.jpg",
-    "static/media/alfont_com_AlFont_com_04.ttf": "/liaquathassanjaved.github.io/static/media/alfont_com_AlFont_com_04.824758a91441b8d993b8.ttf",
-    "static/media/masjidDS.jpg": "/liaquathassanjaved.github.io/static/media/masjidDS.8ada28bcc811185eb273.jpg",
-    "static/media/cocneptpng.png": "/liaquathassanjaved.github.io/static/media/cocneptpng.77822f832eee07f2b360.png",
-    "static/media/JavedResumeIT.pdf": "/liaquathassanjaved.github.io/static/media/JavedResumeIT.3d30d911e8685bae58bc.pdf",
-    "static/media/chiraq.jpg": "/liaquathassanjaved.github.io/static/media/chiraq.24f32a7b8c6419201674.jpg",
-    "static/media/Audrey-Normal.otf": "/liaquathassanjaved.github.io/static/media/Audrey-Normal.dbf539370e1b91e7fef5.otf",
-    "static/media/logo.svg": "/liaquathassanjaved.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/liaquathassanjaved.github.io/index.html",
-    "main.a209d655.css.map": "/liaquathassanjaved.github.io/static/css/main.a209d655.css.map",
-    "main.8ea5c1a2.js.map": "/liaquathassanjaved.github.io/static/js/main.8ea5c1a2.js.map",
-    "787.b80100c1.chunk.js.map": "/liaquathassanjaved.github.io/static/js/787.b80100c1.chunk.js.map"
+    "main.css": "/github.io/liaquathassanjaved.github.io/static/css/main.f855e6bc.css",
+    "main.js": "/github.io/liaquathassanjaved.github.io/static/js/main.65ef574b.js",
+    "static/js/453.db46277d.chunk.js": "/github.io/liaquathassanjaved.github.io/static/js/453.db46277d.chunk.js",
+    "static/media/logo.svg": "/github.io/liaquathassanjaved.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/github.io/liaquathassanjaved.github.io/index.html",
+    "main.f855e6bc.css.map": "/github.io/liaquathassanjaved.github.io/static/css/main.f855e6bc.css.map",
+    "main.65ef574b.js.map": "/github.io/liaquathassanjaved.github.io/static/js/main.65ef574b.js.map",
+    "453.db46277d.chunk.js.map": "/github.io/liaquathassanjaved.github.io/static/js/453.db46277d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a209d655.css",
-    "static/js/main.8ea5c1a2.js"
+    "static/css/main.f855e6bc.css",
+    "static/js/main.65ef574b.js"
   ]
 }
